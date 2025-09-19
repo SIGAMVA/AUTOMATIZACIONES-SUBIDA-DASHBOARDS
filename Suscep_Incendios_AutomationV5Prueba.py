@@ -20,7 +20,7 @@ GIS_USER = "unidad.gestion.riesgo"
 ITEM_ID = "49294579c5f341b8b78b066a705ca7c3" 
 
 # ⚠️ ADVERTENCIA DE SEGURIDAD: Usar solo en entornos controlados.
-GIS_PASSWORD = "SIG_AMVA_2025#" # Reemplaza con tu contraseña
+GIS_PASSWORD = "XXXXXXXX" # Reemplaza con tu contraseña
 
 # ===================================================================
 # === 2. FUNCIÓN PRINCIPAL DE ACTUALIZACIÓN                       ===
@@ -114,4 +114,5 @@ def actualizar_capa_incendios_produccion_final():
 
 if __name__ == "__main__":
     actualizar_capa_incendios_produccion_final()
+
     
