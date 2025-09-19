@@ -124,7 +124,7 @@ hoy = datetime.date.today()
 fecha_str = hoy.strftime("%Y-%m-%d")
 # === CONFIGURACIÓN ===
 # Login
-gis = GIS("https://www.arcgis.com", "unidad.gestion.riesgo", "SIG_AMVA_2025#")  # Reemplaza con tus credenciales
+gis = GIS("https://www.arcgis.com", "unidad.gestion.riesgo", "XXXXXX")  # Reemplaza con tus credenciales
 
 # ID del Feature Layer en ArcGIS Online
 item_id = "13e98e0ed80c4f45b0d5a8d4f742ef72"  # Reemplaza con el ID de tu item
@@ -625,5 +625,6 @@ else:
             total_failed += len(feature_chunk)
 
     print(f"✅ Total cargado: {total_added} | ❌ Fallidos: {total_failed}")
+
 
 print("✅ Script completado.")
