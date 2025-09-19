@@ -48,7 +48,7 @@ def descargar_archivo_siata_diario():
 
 # === CONFIGURACIÓN ===
 # Login
-gis = GIS("https://www.arcgis.com", "unidad.gestion.riesgo", "SIG_AMVA_2025#") # Reemplaza con tus credenciales
+gis = GIS("https://www.arcgis.com", "unidad.gestion.riesgo", "XXXXXXX") # Reemplaza con tus credenciales
 
 # ID del Feature Layer en ArcGIS Online
 item_id = "c69debbaa88047c394f1c1eff4922143" # Reemplaza con el ID de tu item
@@ -402,3 +402,4 @@ else:
     print(f"🏁 Proceso de carga finalizado. Total Agregados: {total_added_successfully}, Total Fallidos: {total_failed}")
 
 print("✅ Script completado.")
+
