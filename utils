@@ -1,0 +1,21 @@
+# utils/arcgis_auth.py
+from arcgis.gis import GIS
+import os
+
+def autenticar_arcgis():
+    """
+    Maneja la autenticación centralizada.
+    Intenta usar variables de entorno primero por seguridad.
+    """
+    # Idealmente, usa variables de entorno o un archivo config.yaml
+    # Por ahora, para refactorizar rápido, centraliza aquí tus credenciales
+    # PERO NO LAS SUBAS AL GITHUB. Luego te enseño a usar .env
+    usuario = os.getenv("ARCGIS_USER", "unidad.gestion.riesgo")
+    password = os.getenv("ARCGIS_PASS", "SIG_AMVA_2025#")
+    url = "https://www.arcgis.com" # O la URL del portal del AMVA
+    
+    print(f"Iniciando sesión en {url} con usuario {usuario}...")
+    gis = GIS(url, usuario, password)
+    print("¡Autenticación exitosa!")
+    return gis
+
